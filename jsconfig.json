@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": "http://120.25.227.68:3002",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
