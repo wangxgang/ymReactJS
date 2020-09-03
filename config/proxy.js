@@ -8,7 +8,9 @@
 export default {
   dev: {
     '/api/': {
-      target: 'http://192.168.1.127:8092',  //http://120.25.227.68:3002
+      // target: 'http://192.168.1.127:8092',
+      // target: 'http://120.25.227.68:3002',
+      target: 'http://localhost:3300',
       changeOrigin: true,
       pathRewrite: {
         '^': ''
@@ -26,7 +28,8 @@ export default {
   },
   pre: {
     '/api/': {
-      target: 'http://120.25.227.68:3002',
+      // target: 'http://120.25.227.68:3002',
+      target: 'http://192.168.3.8:3300',
       changeOrigin: true,
       pathRewrite: {
         '^': '',

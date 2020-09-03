@@ -51,7 +51,7 @@ const errorHandler = error => {
 console.log(process.env.NODE_ENV === 'development')
 // debugger
 const request = extend({
-  prefix: process.env.NODE_ENV === 'development' ? '' : 'http://120.25.227.68:3002',
+  prefix: process.env.NODE_ENV === 'development' ? '' : 'http://192.168.3.8:3300',//'http://120.25.227.68:3002',
   errorHandler,
   // headers: {
   //   // Authorization: `${localStorage.getItem('token')}`,

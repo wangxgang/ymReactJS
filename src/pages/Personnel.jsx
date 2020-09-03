@@ -191,6 +191,16 @@ const Demo = () => {
         <br />
         showLeafIcon: <Switch checked={showLeafIcon} onChange={onSetLeafIcon} />
       </div> */}
+      <div>
+        <ul>
+          {typeof(oData)}
+          {
+            oData.map(item => {
+            <li>{item.orgName}</li>
+            })
+          }
+        </ul>
+      </div>
       <div className="left">
         <Tree
           showLine={showLine}

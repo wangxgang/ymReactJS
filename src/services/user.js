@@ -23,3 +23,8 @@ export async function postPerson(params) {
 export async function getPerson(params) {
   return request(`/api/Person?${qs.stringify(params)}`);
 }
+
+//
+export async function queryList() {
+  return request('/api/list');
+}

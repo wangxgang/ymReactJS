@@ -1,9 +1,11 @@
 import { AlipayCircleOutlined, TaobaoCircleOutlined, WeiboCircleOutlined } from '@ant-design/icons';
 import { Alert, Checkbox } from 'antd';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, connect } from 'umi';
 import LoginForm from './components/Login';
 import styles from './style.less';
+
+import {queryList} from '@/services/user'
 
 const { Tab, UserName, Password, Mobile, Captcha, Submit } = LoginForm;
 
@@ -31,6 +33,12 @@ const Login = props => {
       payload: { ...values, type },
     });
   };
+
+  useEffect(() => {
+    queryList().then(data => {
+      console.log(data);
+    })
+  }, []);
 
   return (
     <div className={styles.main}>
