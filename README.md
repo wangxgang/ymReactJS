@@ -79,4 +79,4 @@ You can view full document on our [official website](https://pro.ant.design). An
   └── package.json
 
 ### 技术栈
-React、Hook、dva、umi、Ant Design Pro
+React@16.13、Hook、dva、umi、Ant Design Pro
