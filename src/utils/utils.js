@@ -12,9 +12,15 @@ export const isAntDesignPro = () => {
   return window.location.hostname === 'preview.pro.ant.design';
 }; // 给官方演示站点用，用于关闭真实开发环境不需要使用的特性
 
+/**
+ * 判断当前环境是否为 Ant Design Pro 或开发环境
+ * 
+ * @returns {boolean} 如果是开发环境或 Ant Design Pro 环境则返回 true，否则返回 false
+ */
 export const isAntDesignProOrDev = () => {
   const { NODE_ENV } = process.env;
 
+  // 在开发环境下直接返回 true
   if (NODE_ENV === 'development') {
     return true;
   }
