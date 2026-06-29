@@ -10,7 +10,7 @@ export default {
     '/api/': {
       // target: 'http://192.168.1.127:8092',
       // target: 'http://120.25.227.68:3002',
-      target: 'http://localhost:3300',
+      target: 'http://localhost:3301',
       changeOrigin: true,
       pathRewrite: {
         '^': ''
